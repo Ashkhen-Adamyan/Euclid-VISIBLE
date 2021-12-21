@@ -1,0 +1,108 @@
+.work__container {
+  margin-bottom: 80px;!important
+}
+.work__container__heading {
+  margin-bottom: 49px;
+}
+.work__list__item {
+  margin-right: 86px;
+  margin-bottom: 45px;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.work__list__btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-333333);
+}
+.work__content__left {
+  max-width: 760px;
+}
+.work__content__heading {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.7px;
+  color: var(--color-333333);
+}
+.work__content__description {
+  margin-bottom: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: var(--color-333333);
+}
+.work__content__link-left {
+  margin-right: 28px;
+  padding: 20px 40px;
+  background-color: var(--color-ff9900);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-ffffff);
+  transition: background-color 0.2s ease;
+}
+.work__content__link-right {
+  padding: 18px 36px;
+  border: 1px solid var(--color-333333);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-333333);
+  transition-property: color, background-color, border;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.work__img-container {
+  min-width: 870px;
+  min-height: 490px;
+}
+.work__img img {
+  width: 100%;
+  height: auto;
+}
+.row__gap {
+  gap: 130px;
+}
+.work__content__link-left:hover {
+  background-color: var(--color-F7B045);
+}
+.work__content__link-left:focus {
+  background-color: var(--color-F7B045);
+}
+.work__content__link-left:active {
+  background-color: var(--color-e1670e);
+}
+.work__content__link-right:hover {
+  color: var(--color-ffffff);
+  background-color: var(--color-666666);
+  border: none;
+}
+.work__content__link-right:focus {
+  color: var(--color-ffffff);
+  background-color: var(--color-666666);
+  border: none;
+}
+
+.work__content__link-right:active {
+  color: var(--color-ffffff);
+  background-color: var(--color-000000);
+  border: none;
+}
+.work__list__btn:hover {
+  color: var(--color-ff9900);
+}
+.work__list__btn:focus {
+  padding: 5px;
+  color: var(--color-333333);
+  border: 2px solid var(--color-ff9900);
+}
+.work__list__btn:active {
+  color: var(--color-e1670e);
+}
