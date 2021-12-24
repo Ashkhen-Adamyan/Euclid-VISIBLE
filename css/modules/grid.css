@@ -1,7 +1,9 @@
 .container {
   width: 100%;
-  max-width: 1770px;
+  max-width: 1920px;
   margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 .heading {
   font-weight: 400;
