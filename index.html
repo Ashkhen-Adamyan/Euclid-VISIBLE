@@ -11,33 +11,37 @@
 
 <body>
   <header class="header">
-    <div class="header__container container flex justify-between">
-      <a href="#" class="header__logo-link"> <img class="" src="img/logo.svg" alt="logo euclid">
-      </a>
-      <nav class="header__nav-container">
-        <ul class="header__list flex">
-          <li class="header__list-item">
-            <a href="#" class="header__list-item__link">О нас</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__list-item__link">Проекты</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__list-item__link">Этапы</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__list-item__link">Отзывы</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__list-item__link">Контакты</a>
-          </li>
-        </ul>
-        <button class="header__search-btn" aria-label="поиск по сайту"></button>
-      </nav>
+    <div class="container flex align-items-center justify-between">
+      <div class="flex">
+        <a href="#" class="header__logo-link"> <img class="" src="img/logo.svg" alt="logo euclid">
+        </a>
+      </div>
+      <div class="flex align-items-end">
+        <nav class="header__nav-container">
+          <ul class="header__list flex">
+            <li class="header__list-item">
+              <a href="#" class="header__list-item__link">О нас</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-item__link">Проекты</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-item__link">Этапы</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-item__link">Отзывы</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-item__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__search-btn flex" aria-label="поиск по сайту"></button>
+      </div>
     </div>
   </header>
-  <main>
-    <section class="design-solutions">
+  <main class="">
+    <section class="design-solutions container">
       <div class="design-solutions__container">
         <div class="design-solutions__descr-container">
           <h1 class="design-solutions__heading">Проектные решения любой сложности</h1>
@@ -47,8 +51,8 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
-      <div class="container about-us__container">
+    <section class="about-us container">
+      <div class=" about-us__container">
         <div class="about-us__description-container">
           <h2 class="about-us__heading heading">О нас</h2>
           <p class="about-us__descriptione">Также как перспективное планирование создаёт необходимость включения
@@ -142,54 +146,19 @@
           <li class="faq__list__item descr">
             <h3>чего формируется конечная стоимость
               проекта? </h3>
-            <svg class="faq__img-cross" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
           </li>
           <li class="faq__list__item descr">
             <h3>меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?</h3>
-            <svg class="faq__img-cross" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
           </li>
           <li class="faq__list__item descr">
             <h3>Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</h3>
-            <svg class="faq__img-cross" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
           </li>
           <li class="faq__list__item descr">
             <h3>Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование с&nbsp;подрядчиком&nbsp;/ организацией?
             </h3>
-            <svg class="faq__img-cross" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
           </li>
           <li class="faq__list__item descr">
             <h3>Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</h3>
-            <svg class="faq__img-cross" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                fill="#666666" />
-            </svg>
           </li>
         </ul>
       </div>
@@ -197,7 +166,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container footer-container row">
+    <div class="container row footer-container">
       <div class="footer-container__left col-2">
         <div class="footer__logo-container">
           <img class="footer__logo" src="img/Logofooter.svg" alt="">
@@ -274,8 +243,10 @@
           class="footer__input-message input__condition"></textarea>
         <div>
           <button class="footer-container__button">Отправить данные</button>
-          <input class="footer-container__input-checkbox" type="checkbox" required>
-          <a class="footer-container__link" href="">Согласен на обработку данных</a>
+          <label for="checkbox_send" class="footer-container__input">
+            <input class="footer-container__input-checkbox" type="checkbox" id="checkbox_send" required checked>
+            Согласен на обработку данных
+          </label>
         </div>
       </div>
       <div class="footer-container__right col-2">

@@ -20,6 +20,8 @@
   align-items: flex-end;
 }
 .about-us__card-left__border {
+  align-self: flex-end;
+  align-items: center;
   padding: 50px;
   min-width: 100%;
   min-height: 196px;
@@ -54,9 +56,7 @@
   border: 3px solid var(--color-ff9900);
 }
 .about-us__card-right__border {
-  width: 870px;
-  min-height: 295px;
-  padding: 62px 118px 65px 296px;
+  padding: 62px 150px 65px 296px;
   background: var(--color-ffffff);
   border: 1px solid #cacaca;
   background-repeat: no-repeat;

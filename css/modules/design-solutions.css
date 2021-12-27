@@ -1,7 +1,4 @@
 .design-solutions__container {
-  max-width: 1770px;
-  min-height: 620px;
-  margin: 0 auto;
   padding: 100px 80px;
   background-image: url("../../img/slider.jpg");
   background-size: cover;
