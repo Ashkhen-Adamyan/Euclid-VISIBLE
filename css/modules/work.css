@@ -1,12 +1,14 @@
 .work__container {
-  margin-bottom: 80px;!important
+  margin-bottom: 100px;
 }
 .work__container__heading {
   margin-bottom: 49px;
 }
+.work__list {
+  margin-bottom: 45px;
+}
 .work__list__item {
   margin-right: 86px;
-  margin-bottom: 45px;
   transition-property: color, background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
@@ -60,15 +62,17 @@
   transition-timing-function: ease;
 }
 .work__img-container {
-  min-width: 870px;
-  min-height: 490px;
+  background-image: url("../../img/workimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .work__img img {
   width: 100%;
   height: auto;
 }
 .row__gap {
-  gap: 130px;
+  gap: 50px;
 }
 .work__content__link-left:hover {
   background-color: var(--color-F7B045);
@@ -105,4 +109,93 @@
 }
 .work__list__btn:active {
   color: var(--color-e1670e);
+}
+@media (max-width: 1024px) {
+  .work__container {
+    margin-bottom: 80px;
+  }
+  .work__list {
+    margin-bottom: 50px;
+  }
+  .work__content__description {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .work__list__item {
+    margin-right: 155px;
+  }
+  .work__container__left {
+    flex-wrap: wrap-reverse;
+  }
+  .work__img-container {
+    flex-basis: 100%;
+    min-width: 668px;
+    padding-top: 284px;
+  }
+  .row__gap {
+    gap: 38px;
+  }
+  .work__content__container {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .work__list__item {
+    margin-right: 50px;
+  }
+  .work__img-container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .work__container__heading {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .work__img-container {
+    padding-top: 160px;
+  }
+  .work__list__btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .work__list__item {
+    margin-right: 40px;
+  }
+  .work__list {
+    margin-bottom: 16px;
+  }
+  .row__gap {
+    gap: 16px;
+  }
+  .work__content__heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .work__content__description {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .work__content__link-left {
+    margin-right: 10px;
+    padding: 12px 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .work__content__link-right {
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .work__container {
+    margin-bottom: 60px;
+  }
 }
