@@ -7,22 +7,29 @@
   <title>Euclid</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script defer src="js/faq.js"></script>
+  <script defer src="js/header.js"></script>
+  <script defer src="js/solutions.js"></script>
+  <script defer src="js/work.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="header-container container flex align-items-center justify-between">
-      <div class="header__burger">
-        <a href="#" class="header__burger-link"> <img class="" src="img/burger.svg" alt="logo euclid">
-        </a>
-      </div>
-      <div class="header__logo-container flex">
-        <a href="#" class="header__logo-link"> <img class="header__logo-link__ing" src="img/logo.svg" alt="logo euclid">
-        </a>
-      </div>
-      <div class="flex align-items-end">
-        <nav class="header__nav-container">
-          <ul class="header__list flex">
+    <div class="header-container container flex align-items-center ">
+      <button class="header__burger-menu burger" aria-label="открыть меню">
+        <span class="header__burger-menu-line"></span>
+      </button>
+      <a href="#" class="header__logo-link"> <img class="header__logo_img" src="img/logo.svg" alt="logo euclid">
+      </a>
+      <div class="header__nav flex">
+        <nav class="header__nav-container flex menu">
+          <ul class="header__list flex align-items-center">
             <li class="header__list-item">
               <a href="#" class="header__list-item__link">О нас</a>
             </li>
@@ -40,18 +47,38 @@
             </li>
           </ul>
         </nav>
-        <button class="header__search-btn flex" aria-label="поиск по сайту"></button>
+
+        <div class="header__search flex">
+          <button class="header__search-btn" aria-label="поиск по сайту"></button>
+          <input type="text" name="search" class=" header__input " placeholder="Что будем искать?">
+          <svg class="search__svg " width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+              fill="#999999" />
+            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+              fill="#999999" />
+            <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2" />
+          </svg>
+        </div>
       </div>
     </div>
   </header>
   <main>
     <section class="solutions container">
       <div class="solutions__container">
-        <div class="solutions__descr-container">
-          <h1 class="solutions__heading">Проектные решения любой сложности</h1>
-          <p class="solutions__description">Есть над чем задуматься: базовые сценарии поведения пользователей
-            и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
-          <button class="solutions__btn">Заказать расчёт</button>
+        <div class="swiper">
+          <div class="solutions__descr-container flex">
+            <h1 class="solutions__heading">Проектные решения любой сложности</h1>
+            <p class="solutions__description">Есть над чем задуматься: базовые сценарии поведения пользователей
+              и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
+            <button class="solutions__btn">Заказать расчёт</button>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img alt=""></div>
+            <div class="swiper-slide"><img alt=""></div>
+            <div class="swiper-slide"><img alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -102,40 +129,75 @@
     <section class="work">
       <div class="container work__container">
         <h2 class="work__container__heading heading">Как мы&nbsp;работаем</h2>
-        <div>
-          <ul class="work__list flex">
-            <li class="work__list__item">
-              <button class="work__list__btn">1&nbsp;шаг</button>
-            </li>
-            <li class="work__list__item">
-              <button class="work__list__btn">2&nbsp;шаг</button>
-            </li>
-            <li class="work__list__item">
-              <button class="work__list__btn">3&nbsp;шаг</button>
-            </li>
-            <li class="work__list__item">
-              <button class="work__list__btn">4&nbsp;шаг</button>
-            </li>
-          </ul>
-        </div>
-        <article class="row row__gap work__container__left">
-          <div class="col-2 work__content__container">
-            <h3 class="work__content__heading">Проводим консультацию</h3>
-            <p class="work__content__description">Влечет за собой процесс внедрения и модернизации приоритизации разума
-              над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики
-              будут
-              объективно рассмотрены соответствующими инстанциями. А также представители современных социальных
-              резервов,
-              инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь
-              частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой
-              серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии
-              освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
-              призваны
-              к ответу.</p>
+        <article class="work__container__left">
+          <div id="tabs" class="col-2 work__content__container">
+            <ul class="work__list flex">
+              <li class="work__list__item"><a href="#tabs-1">1&nbsp;шаг</a></li>
+              <li class="work__list__item"><a href="#tabs-2">2&nbsp;шаг</a></li>
+              <li class="work__list__item"><a href="#tabs-3">3&nbsp;шаг</a></li>
+              <li class="work__list__item"><a href="#tabs-4">4&nbsp;шаг</a></li>
+            </ul>
+            <div>
+              <div id="tabs-1" class="flex work__tabs">
+                <div class="flex col-2 work__tabs__right-container">
+                  <h3 class="work__content__heading">Проводим консультацию</h3>
+                  <p class="work__content__description">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
+                    приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые
+                    особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
+                    А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                    синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                    реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии
+                    независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии
+                    освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы,
+                    разумеется, призваны к&nbsp;ответу.</p>
+                </div>
+                <div class="col-2 work__img work__img-first">
+                </div>
+              </div>
+            </div>
+            <div id="tabs-2" class="flex work__tabs">
+              <div class="flex col-2 work__tabs__right-container">
+                <h3 class="work__content__heading">Составляем смету</h3>
+                <p class="work__content__description">Внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
+                  В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
+                  объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных
+                  резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления.
+                  Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные
+                  исследования подвергнуты целой серии независимых исследований.</p>
+              </div>
+              <div class="col-2 work__img work__img-second">
+              </div>
+            </div>
+            <div id="tabs-3" class="flex work__tabs">
+              <div class="flex col-2 work__tabs__right-container">
+                <h3 class="work__content__heading">Привлекаем подрядчиков</h3>
+                <p class="work__content__description">Идейные соображения высшего порядка, а&nbsp;также новая модель
+                  организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень
+                  вовлечения представителей целевой аудитории является четким доказательством простого факта:
+                  высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития.
+                  Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит
+                  о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности,
+                  постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные
+                  задания по&nbsp;разработке прогресса профессионального сообщества.</p>
+              </div>
+              <div class="col-2 work__img work__img-thrd">
+              </div>
+            </div>
+            <div id="tabs-4" class="flex work__tabs">
+              <div class="flex col-2 work__tabs__right-container">
+                <h3 class="work__content__heading">Инспектируем все этапы работ</h3>
+                <p class="work__content__description">Высокий уровень вовлечения представителей целевой аудитории
+                  является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую
+                  зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что
+                  новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия.
+                  Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение
+                  нашей деятельности позволяет.</p>
+              </div>
+              <div class="col-2 work__img work__img-fourth">
+              </div>
+            </div>
             <button href="" class="work__content__link-left">Подробнее</button>
             <button href="" class="work__content__link-right">Договор</button>
-          </div>
-          <div class="col-2 work__img-container">
           </div>
         </article>
       </div>
@@ -143,35 +205,138 @@
     <section class="faq">
       <div class="container faq__container">
         <h2 class="heading faq__heaging">Часто задаваемые вопросы</h2>
-        <ul class="faq__list">
-          <li class="faq__list__item descr flex justify-between">
-            <h3 class="faq__item__heading">Из чего формируется конечная стоимость
-              проекта? </h3>
-            <div class="faq__list__img"></div>
-          </li>
-          <li class="faq__list__item descr flex justify-between">
-            <h3 class="faq__item__heading">У меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp; <span
-                class="faq__list__slash">/
-              </span>реализовать?</h3>
-            <div class="faq__list__img"></div>
-          </li>
-          <li class="faq__list__item descr flex justify-between">
-            <h3 class="faq__item__heading">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</h3>
-            <div class="faq__list__img"></div>
-          </li>
-          <li class="faq__list__item descr flex justify-between">
-            <h3 class="faq__item__heading">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;<span
-                class="faq__list__slash">/ </span>согласование
-              с&nbsp;подрядчиком&nbsp;<span class="faq__list__slash">/ </span>организацией?
-            </h3>
-            <div class="faq__list__img"></div>
-          </li>
-          <li class="faq__list__item descr flex justify-between">
-            <h3 class="faq__item__heading">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?
-            </h3>
-            <div class="faq__list__img"></div>
-          </li>
-        </ul>
+        <div id="accordion">
+          <h3 class=" faq__item__heading  faq__list__item descr">Из чего формируется
+            конечная стоимость
+            проекта?
+            <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+          </h3>
+          <div class="faq__description__container">
+            <p class="faq__item__description">
+              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас
+              к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы.
+              Но&nbsp;высококачественный прототип будущего проекта является качественно новой ступенью первоочередных
+              требований. А&nbsp;ещё некоторые особенности внутренней политики, которые представляют собой яркий пример
+              континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+              этики и&nbsp;морали. И&nbsp;нет сомнений, что явные признаки победы институционализации призывают нас
+              к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть указаны как претенденты на&nbsp;роль
+              ключевых факторов.<br><br>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики
+              могут
+              быть
+              призваны к&nbsp;ответу. Явные признаки победы институционализации набирают популярность среди определенных
+              слоев населения, а&nbsp;значит, должны быть объединены в&nbsp;целые кластеры себе подобных. Банальные,
+              но&nbsp;неопровержимые выводы, а&nbsp;также многие известные личности призывают нас к&nbsp;новым
+              свершениям, которые, в&nbsp;свою очередь, должны быть представлены в&nbsp;исключительно положительном
+              свете.
+            </p>
+          </div>
+          <h3 class=" faq__item__heading faq__list__item descr">У меня есть свой
+            проект. Сможем&nbsp;ли мы&nbsp;его
+            доработать&nbsp;/реализовать?
+            <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+          </h3>
+          <div class="faq__description__container">
+            <p class="faq__item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+            </p>
+          </div>
+          <h3 class="faq__item__heading  faq__list__item descr ">Я&nbsp;выбираю между
+            разными компаниями. В&nbsp;чём ваше
+            отличие? <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span></h3>
+          <div class="faq__description__container">
+            <p class="faq__item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+            </p>
+          </div>
+          <h3 class=" faq__item__heading faq__list__item descr">Могу&nbsp;ли
+            я&nbsp;делегировать вам работу&nbsp;/согласование
+            с&nbsp;подрядчиком&nbsp;/организацией?<span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+          </h3>
+          <div class="faq__description__container">
+            <p class="faq__item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+            </p>
+          </div>
+          <h3 class=" faq__item__heading faq__list__item descr">Могу&nbsp;ли
+            я&nbsp;вернуть деньги на&nbsp;каком-либо
+            из&nbsp;этапов работ? <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+          </h3>
+          <div class="faq__description__container">
+            <p class="faq__item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo aliquam voluptates quaerat rerum
+              repellat odio repudiandae totam porro aspernatur fugiat maxime aut tempora ea ab, deleniti nam assumenda
+              earum!
+            </p>
+          </div>
+        </div>
+
+
       </div>
 
     </section>
@@ -210,11 +375,11 @@
         <div>
           <ul class="footer__list-sotial flex">
             <li class="footer__list-sotial__item">
-              <h3>
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M30 0C13.5 0 0 13.5241 0 30.1807C0 45.241 10.98 57.741 25.32 60V38.9157H17.7V30.1807H25.32V23.5241C25.32 15.9639 29.79 11.8072 36.66 11.8072C39.93 11.8072 43.3499 12.3795 43.3499 12.3795V19.8193H39.57C35.85 19.8193 34.68 22.1386 34.68 24.5181V30.1807H43.0199L41.6699 38.9157H34.68V60C41.7493 58.8791 48.1866 55.2576 52.8297 49.7893C57.4729 44.3211 60.016 37.3664 59.9999 30.1807C59.9999 13.5241 46.4999 0 30 0Z"
-                    fill="#7C7C7C" />
+              <h3 class="faq__item__heading">
+                <svg width=" 60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30 0C13.5 0 0 13.5241 0 30.1807C0 45.241 10.98 57.741 25.32 60V38.9157H17.7V30.1807H25.32V23.5241C25.32 15.9639 29.79 11.8072 36.66 11.8072C39.93 11.8072 43.3499 12.3795 43.3499 12.3795V19.8193H39.57C35.85 19.8193 34.68 22.1386 34.68 24.5181V30.1807H43.0199L41.6699 38.9157H34.68V60C41.7493 58.8791 48.1866 55.2576 52.8297 49.7893C57.4729 44.3211 60.016 37.3664 59.9999 30.1807C59.9999 13.5241 46.4999 0 30 0Z"
+                  fill="#7C7C7C"/>
                 </svg>
               </h3>
             </li>
