@@ -59,8 +59,8 @@
   width: 539px;
 }
 .header__search-btn-active {
-  position: fixed;
-  right: 110px;
+  position: absolute;
+
   margin-right: 20px;
   margin-left: 20px;
   width: 30px;
