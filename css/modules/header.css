@@ -60,7 +60,7 @@
 }
 .header__search-btn-active {
   position: absolute;
-
+  right: 160px;
   margin-right: 20px;
   margin-left: 20px;
   width: 30px;
