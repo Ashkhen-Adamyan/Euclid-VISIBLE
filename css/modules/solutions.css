@@ -1,16 +1,30 @@
 .solutions {
   margin-bottom: 100px;
 }
-.solutions__container {
-  padding: 100px 80px;
-  background-image: url("../../img/slider.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .solutions__descr-container {
+  margin: 80px;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
   max-width: 855px;
   transition: background-color 0.1s ease;
+}
+.swiper {
+  height: 620px;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center center;
+}
+.swiper-slide:nth-child(1n) {
+  background-image: url("../../img/slider.jpg");
+}
+.swiper-slide:nth-child(2n) {
+  background-image: url("../../img/swiper2.jpg");
+}
+.swiper-slide:nth-child(3n) {
+  background-image: url("../../img/swiper3.jpg");
 }
 .solutions__heading {
   margin-bottom: 25px;
@@ -29,7 +43,10 @@
   color: var(--color-ffffff);
 }
 .solutions__btn {
-  padding: 24px 38px;
+  margin-bottom: 30px;
+  max-width: 280px;
+  position: relative;
+  padding: 24px 36px;
   letter-spacing: 0.5px;
   font-weight: 700;
   font-size: 23.4581px;
@@ -48,13 +65,14 @@
   background-color: var(--color-e1670e);
 }
 @media (max-width: 1024px) {
-  .solutions__container {
-    padding: 160px 77px;
+  .solutions__descr-container {
+    margin: 160px 77px;
   }
   .solutions {
     margin-bottom: 80px;
   }
   .solutions__heading {
+    z-index: 2;
     margin-bottom: 16px;
     font-size: 60px;
     line-height: 73px;
@@ -64,6 +82,9 @@
     font-size: 20px;
     line-height: 24px;
   }
+  .swiper {
+    height: 668px;
+  }
 }
 @media (max-width: 768px) {
   .solutions__heading {
@@ -71,19 +92,19 @@
     font-size: 50px;
     line-height: 61px;
   }
-  .solutions__container {
-    padding: 160px 38px;
+  .solutions__descr-container {
+    margin: 120px 40px;
   }
   .solutions__description {
     margin-bottom: 60px;
     font-size: 18px;
     line-height: 22px;
   }
+  .swiper {
+    height: 662px;
+  }
 }
 @media (max-width: 576px) {
-  .solutions__container {
-    padding: 90px 66px 90px 38px;
-  }
   .solutions__heading {
     margin-bottom: 20px;
     font-weight: 800;
@@ -99,6 +120,9 @@
     font-size: 18px;
     line-height: 20px;
   }
+  .swiper {
+    height: 500px;
+  }
 }
 @media (max-width: 480px) {
   .solutions__heading {
@@ -108,6 +132,9 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: 0;
+  }
+  .solutions__descr-container {
+    margin: 100px 20px;
   }
   .solutions__description {
     margin-bottom: 32px;
@@ -123,10 +150,10 @@
   .solutions {
     margin-bottom: 60px;
   }
-  .solutions__container {
-    padding: 60px 15px;
+  .swiper {
+    height: 400px;
   }
   .solutions__btn {
-    margin-left: 50px;
+    align-self: center;
   }
 }

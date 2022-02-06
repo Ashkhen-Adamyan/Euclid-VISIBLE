@@ -17,7 +17,6 @@
   color: var(--color-333333);
 }
 .about__card-left {
-  /* flex: 0 0 868px; */
   min-height: 622px;
   background-image: url("../../img/section2.jpg");
   background-repeat: no-repeat;

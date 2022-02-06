@@ -61,11 +61,28 @@
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
-.work__img-container {
-  background-image: url("../../img/workimg.jpg");
+.work__tabs {
+  gap: 142px;
+}
+.work__img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.work__img-first {
+  background-image: url("../../img/workimg.jpg");
+}
+.work__img-second {
+  background-image: url("../../img/workimgsecond.jpg");
+}
+.work__img-thrd {
+  background-image: url("../../img/workimgthrd.jpg");
+}
+.work__img-fourth {
+  background-image: url("../../img/workimgfourth.jpg");
+}
+.work__tabs__right-container {
+  flex-direction: column;
 }
 .work__img img {
   width: 100%;
@@ -73,6 +90,17 @@
 }
 .row__gap {
   gap: 50px;
+}
+.work__list__item:hover {
+  color: var(--color-ff9900);
+}
+.work__list__item:focus {
+  padding: 5px;
+  border: 1px solid var(--color-ff9900);
+  color: var(--color-333333);
+}
+.work__list__item:active {
+  color: var(--color-e1670e);
 }
 .work__content__link-left:hover {
   background-color: var(--color-F7B045);
@@ -93,7 +121,6 @@
   background-color: var(--color-666666);
   border: none;
 }
-
 .work__content__link-right:active {
   color: var(--color-ffffff);
   background-color: var(--color-000000);
@@ -123,29 +150,23 @@
 }
 @media (max-width: 768px) {
   .work__list__item {
-    margin-right: 155px;
+    margin-right: 100px;
   }
-  .work__container__left {
+  .work__tabs {
     flex-wrap: wrap-reverse;
-  }
-  .work__img-container {
-    flex-basis: 100%;
-    min-width: 668px;
-    padding-top: 284px;
-  }
-  .row__gap {
     gap: 38px;
   }
-  .work__content__container {
+  .work__tabs__right-container {
     flex-basis: 100%;
+  }
+  .work__img {
+    flex-basis: 100%;
+    padding-top: 284px;
   }
 }
 @media (max-width: 576px) {
   .work__list__item {
     margin-right: 50px;
-  }
-  .work__img-container {
-    min-width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -155,21 +176,12 @@
     font-size: 24px;
     line-height: 29px;
   }
-  .work__img-container {
-    padding-top: 160px;
-  }
-  .work__list__btn {
-    font-size: 14px;
-    line-height: 17px;
-  }
+
   .work__list__item {
     margin-right: 40px;
   }
   .work__list {
     margin-bottom: 16px;
-  }
-  .row__gap {
-    gap: 16px;
   }
   .work__content__heading {
     font-weight: 500;
@@ -197,5 +209,10 @@
   }
   .work__container {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .work__content__link-left {
+    margin-bottom: 10px;
   }
 }

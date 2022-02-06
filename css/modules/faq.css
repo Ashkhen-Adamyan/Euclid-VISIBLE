@@ -16,56 +16,49 @@
   line-height: 32px;
   color: var(--color-CACACA);
 }
-.faq__list__item {
+.faq__item__description {
+  max-width: 1003px;
+  margin: 15px 40px 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-333333);
+}
+.faq__description__container {
+  margin-bottom: 10px;
+}
+.ui-accordion-header {
+  display: flex;
   align-items: center;
-  transition-property: border-bottom, color, border-top fill;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+
+  transition: border 0.2s ease, color 0.2s ease;
 }
-.faq__list__img {
-  padding: 25px;
-  background-image: url("../../img/circlegrey.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
+.ui-accordion-header:hover .ui-icon-plus {
+  background-image: url("../../img/plusorange.svg");
 }
-.descr:nth-child(2) {
-  border-top: none;
+
+.ui-accordion-header-active .ui-icon-plus {
+  transform: rotate(45deg);
 }
-.descr:nth-child(3) {
-  border-top: none;
+.ui-icon-plus {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  flex-shrink: 0;
+  background-image: url("../../img/plusgrey.svg");
+  background-position: center;
+  background-size: cover;
+
+  transition: transform 0.2s ease, background 0.2s ease;
 }
-.descr:nth-child(4) {
-  border-top: none;
+.faq__item__heading:hover {
+  color: var(--color-ff9900);
 }
-.descr:nth-child(5) {
-  border-top: none;
+.faq__item__heading:focus {
+  color: var(--color-ff9900);
 }
-.faq__list__item .faq__img-cross:hover path {
-  fill: var(--color-ffffff);
-}
-.faq__img-cross:focus path {
-  fill: var(--color-ffffff);
-}
-.faq__list__item .faq__img-cross:hover ellipse {
-  fill: var(--color-ff9900);
-}
-.faq__img-cross:focus ellipse {
-  fill: var(--color-ff9900);
-}
-.faq__img-cross:active ellipse {
-  fill: var(--color-ECECEC);
-}
-.descr:hover {
-  border-bottom: 1px solid var(--color-ff9900);
-  border-top: 1px solid var(--color-ff9900);
-}
-.descr:focus {
-  border-bottom: 1px solid var(--color-ff9900);
-  border-top: 1px solid var(--color-ff9900);
-}
-.descr:active {
-  border-bottom: 1px solid var(--color-CACACA);
-  border-top: 1px solid var(--color-CACACA);
+.faq__item__heading:active {
+  color: var(--color-333333);
 }
 .faq__lebel:hover {
   color: var(--color-ff9900);
@@ -99,8 +92,9 @@
     line-height: 24px;
     letter-spacing: 0;
   }
-  .faq__list__img {
-    background-size: 30px 30px;
+  .faq__item__description {
+    font-size: 14px;
+    line-height: 28px;
   }
   .faq__container {
     margin-bottom: 60px;
