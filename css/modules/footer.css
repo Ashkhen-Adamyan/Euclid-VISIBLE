@@ -104,6 +104,7 @@
 }
 .input__condition:focus {
   background-color: var(--color-666666);
+  outline: 1px solid blue;
 }
 .input__condition:active {
   background-color: var(--color-666666);
