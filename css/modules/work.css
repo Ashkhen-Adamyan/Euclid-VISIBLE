@@ -61,6 +61,9 @@
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
+.ui-tabs-active {
+  color: var(--color-ff9900);
+}
 .work__tabs {
   gap: 142px;
 }

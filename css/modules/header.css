@@ -59,8 +59,8 @@
   width: 539px;
 }
 .header__search-btn-active {
-  position: absolute;
-  right: 160px;
+  position: fixed;
+  right: 110px;
   margin-right: 20px;
   margin-left: 20px;
   width: 30px;
@@ -112,9 +112,11 @@
     background-color: var(--color-ffffff);
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     transform: translateX(-101%);
+    visibility: hidden;
   }
   .menu-active {
     transform: none;
+    visibility: visible;
   }
   .header__list {
     flex-direction: column;

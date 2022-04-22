@@ -22,3 +22,9 @@ searchBtn.addEventListener('click', function(){
   searchSvg.classList.toggle('search__svg-active');
 })
 
+searchSvg.addEventListener('click', function(){
+  searchBtn.classList.toggle('header__search-btn-active');
+  searchDiv.classList.toggle('header__search-active');
+  searchInput.classList.toggle('header__input-active');
+  searchSvg.classList.toggle('search__svg-active');
+})
